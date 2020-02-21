@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+    width: 1020px;
+    font-family: "Lato";
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #2d2f39;
+    color: white;
+}
+
+.main_nav ul{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main_nav ul li a{
+   color:white;
+   text-decoration: none;
+}
+
+
+
+
+.slider{
+    background: #ef6c64;
+}
+
+
+
+
+
+
+
+
+.services{
+    background: #f1f1f1;
+}
