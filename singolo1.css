@@ -11,13 +11,23 @@ h1, h2, h3, h4, h5, h6{
     justify-content: space-between;
     background: #2d2f39;
     color: white;
+    text-transform: uppercase;
+    height: 89px;
 }
-
+.logo{
+    font-size: 24px;
+    margin:35px 0 0 4px;
+}
+.red{
+    color: #f06c64;
+}
 .main_nav ul{
     display: flex;
     width: 500px;
     justify-content: space-between;
     list-style: none;
+    font-size:12px;
+    margin: 45px 4px 0 0;
 }
 
 .main_nav ul li a{
@@ -30,6 +40,7 @@ h1, h2, h3, h4, h5, h6{
 
 .slider{
     background: #ef6c64;
+    height: 594px;
 }
 
 
@@ -41,4 +52,5 @@ h1, h2, h3, h4, h5, h6{
 
 .services{
     background: #f1f1f1;
+    height: 494px;
 }
