@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: "Lato";
+}
+
+.container{
+    width: 100%;
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    background: #2d303a;
+    box-shadow:  0px 6px 0px 0px rgba(50,55,70,1);
+    text-transform: uppercase;
+}
+.header__inner{
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.logo__star{
+    color:#e66862;
+}
+
+.navigation ul{
+    display: flex;
+    width: 371px;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.navigation>ul :not(:first-child):before{
+    content: "\00B7\00A0\00A0\00A0\00A0\00A0";
+  }
+
+.navigation ul li a:hover{
+    color: #e66862;
+}
+
+/* Slider */
+
+.slider{
+    background: #e66862;
+    height: 594px;
+    box-shadow:  0px 6px 0px 0px #e66862;
+}
+
+.slider__inner{
+    display: flex;
+    height: 594px;
+    align-items: center;
+}
+
+.left__button{
+    width: 1.7%;
+}
+.content{
+    width: 96.6%;
+    justify-content: space-between;
+}
+
+.vertical__iphone{
+    position: relative;
+    left:54px;
+    display: inline-block;
+
+}
+.display{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    width: 189px;
+    height: 333px;
+    top: 65px;
+    left: 14px;
+}
+.iphone{
+    position:absolute;
+    z-index: 1;
+}
+
+.horizontal__iphone{
+    position: relative;
+    display: inline-block;
+    transform: rotate(90deg);
+    left:255px;
+}
+.display__2{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    width: 189px;
+    height: 333px;
+    top: 90px;
+    left: 14px;
+}
+
+.iphone__2{
+    position: absolute;
+    z-index: 1;
+    top:25px
+}
+
+.right__button{
+    width: 1.7%;
+}
+
+
+/* services */
+
+.services{
+    background: #f2f2f2;
+    height: 494px;
+    box-shadow: 0px 6px 0px 0px white;
+    color: #666d89;
+    padding-top: 66px;
+}
+
+.services__inner{
+
+}
+
+h2{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.services__inner>p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 25px;
+}
+
+.table{
+    height: 260px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "item item item"
+    "item item item";
+    grid-gap: 10px;
+    margin-top: 50px~;
+}
+
+.icon{
+    margin-right: 20px;
+}
+.item{
+    display: flex;
+    
+}
+.text h3{
+    font-size: 18px;
+    font-weight: 900;
+}
+.text p{
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 20px;
+}
+
+
