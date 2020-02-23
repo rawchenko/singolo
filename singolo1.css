@@ -7,7 +7,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 92%;
+    max-width: 930px;
     margin: 0 auto;
 }
 
@@ -63,8 +63,9 @@ body{
 
 .slider{
     background: #e66862;
+    margin-top:5px;
     height: 594px;
-    box-shadow:  0px 6px 0px 0px #e66862;
+    box-shadow:  0px 6px 0px 0px #ea676b;
 }
 
 .slider__inner{
@@ -75,6 +76,11 @@ body{
 
 .left__button{
     width: 1.7%;
+    transition: .2s;
+}
+.left__button:hover{
+    opacity: 70%;
+
 }
 .content{
     width: 96.6%;
@@ -125,24 +131,30 @@ body{
 
 .right__button{
     width: 1.7%;
+    transition: .2s;
 }
+.right__button:hover{
+    opacity: 70%;
 
+}
 
 /* services */
 
 .services{
     background: #f2f2f2;
-    height: 494px;
-    box-shadow: 0px 6px 0px 0px white;
-    color: #666d89;
+    height: 500px;
+    box-sizing: border-box;
     padding-top: 66px;
+    margin-top: 6px;
+    color: #666d89;
+    box-shadow: 0px 6px 0px 0px white;
 }
 
 .services__inner{
-
+    
 }
 
-h2{
+.h2{
     font-weight: 900;
     font-size: 30px;
 }
@@ -164,7 +176,8 @@ h2{
     grid-template-areas: "item item item"
     "item item item";
     grid-gap: 10px;
-    margin-top: 50px~;
+    position: relative;
+    top: 64px;
 }
 
 .icon{
