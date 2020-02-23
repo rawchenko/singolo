@@ -7,7 +7,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 930px;
+    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ body{
     position: relative;
     display: inline-block;
     transform: rotate(90deg);
-    left:255px;
+    left:245px;
 }
 .display__2{
     position: absolute;
@@ -144,15 +144,12 @@ body{
     background: #f2f2f2;
     height: 500px;
     box-sizing: border-box;
-    padding-top: 66px;
+    padding-top: 60px;
     margin-top: 6px;
     color: #666d89;
     box-shadow: 0px 6px 0px 0px white;
 }
 
-.services__inner{
-    
-}
 
 .h2{
     font-weight: 900;
@@ -162,7 +159,7 @@ body{
 .services__inner>p{
     font-size: 18px;
     font-weight: 300;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: justify;
     text-align-last: justify;
     line-height: 25px;
@@ -177,7 +174,7 @@ body{
     "item item item";
     grid-gap: 10px;
     position: relative;
-    top: 64px;
+    top: 54px;
 }
 
 .icon{
