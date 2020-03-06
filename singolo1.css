@@ -7,14 +7,14 @@ body{
 
 .container{
     width: 100%;
-    max-width: 920px;
+    max-width: 940px;
     margin: 0 auto;
 }
 
 /* Header */
 .header{
     background: #2d303a;
-    box-shadow:  0px 6px 0px 0px rgba(50,55,70,1);
+    box-shadow:  0px 7px 0px 0px rgba(50,55,70,1);
     text-transform: uppercase;
 }
 .header__inner{
@@ -37,7 +37,9 @@ body{
 
 .navigation ul{
     display: flex;
+    height: 30px;
     width: 371px;
+    margin-top: 23px;
     justify-content: space-between;
     color: white;
     font-size: 12px;
@@ -53,6 +55,7 @@ body{
 
 .navigation>ul :not(:first-child):before{
     content: "\00B7\00A0\00A0\00A0\00A0\00A0";
+    color: #494e62;
   }
 
 .navigation ul li a:hover{
@@ -62,8 +65,8 @@ body{
 /* Slider */
 
 .slider{
-    background: #e66862;
-    margin-top:5px;
+    background: #f06c64;
+    margin-top:6px;
     height: 594px;
     box-shadow:  0px 6px 0px 0px #ea676b;
 }
@@ -89,7 +92,7 @@ body{
 
 .vertical__iphone{
     position: relative;
-    left:54px;
+    left:57px;
     display: inline-block;
 
 }
@@ -112,6 +115,7 @@ body{
     display: inline-block;
     transform: rotate(90deg);
     left:245px;
+    top:-3px;
 }
 .display__2{
     position: absolute;
@@ -142,10 +146,10 @@ body{
 
 .services{
     background: #f2f2f2;
-    height: 500px;
     box-sizing: border-box;
-    padding-top: 60px;
-    margin-top: 6px;
+    height: 494px;
+    padding: 60px 0;
+    margin: 6px 0;
     color: #666d89;
     box-shadow: 0px 6px 0px 0px white;
 }
@@ -159,34 +163,34 @@ body{
 .services__inner>p{
     font-size: 18px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 17px;
     text-align: justify;
-    text-align-last: justify;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .table{
-    height: 260px;
+    height: 246px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "item item item"
-    "item item item";
-    grid-gap: 10px;
+    grid-gap: 0 20px;
     position: relative;
-    top: 54px;
+    top: 43px;
 }
 
 .icon{
-    margin-right: 20px;
+    margin-right: 21px;
+    margin-top:4px
 }
 .item{
     display: flex;
+    text-align: justify;
     
 }
 .text h3{
     font-size: 18px;
     font-weight: 900;
+    margin-bottom: 9px;
 }
 .text p{
     font-size: 12px;
