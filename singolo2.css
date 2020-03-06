@@ -7,36 +7,36 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 932px;
+    max-width: 940px;
     margin: 0 auto;
 }
 h2{
     font-weight: 900;
     font-size: 30px;
-    padding-bottom: 24px;
+    padding-bottom: 17px;
 }
 p{
     font-weight: 300;
     font-size: 18px;
-    font-family: Roboto;
-    letter-spacing: 0px;
 }
 /* Portfolio */
 
 .portfolio{
     background-color: #2d303a;
     color: #666d89;
-    box-shadow:  0px 100px 0px 0px #323746;
+    box-shadow:  0px 6px 0px 0px #323746;
 }
-
+.portfolio h2{
+    padding-bottom: 22px;
+}
 .portfolio__inner{
-    height: 743px;
-    padding: 59px 0 46px;
+    height: 759px;
+    padding: 60px 0 46px;
 }
 
 .portfolio__inner ul{
     display: flex;
-    padding: 10px 0;
+    padding: 13px 1px;
     
 }
 .portfolio__inner li{
@@ -60,13 +60,13 @@ p{
 .gallery{
     height: 601px;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .gallery__pic{
     display: inline-block;
-    width: 217px;
-    height: 185px;
+    width: 219px;
+    height: 187px;
     margin-bottom: 17px;
     overflow: hidden;
     background-position: center;
@@ -116,28 +116,33 @@ p{
 .about-us{
     background-color: #f2f2f2;
     color: #666d89;
+    height: 669px;
     padding-top: 59px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .about-us p{ /*временно*/
-    font-size: 17px;
+    font-size: 18px;
     line-height: 30px;
+    text-align: justify;
 }
 
 .persons{
-    padding: 39px 0;
+    padding: 45px 0;
     display: flex;
     justify-content: space-between;
 }
 .persons h3{
     padding-bottom: 10px;
     font-weight: 900;
-    font-family: Roboto;
+
+    letter-spacing: -0.5px;
 }
 .persons p{
     font-size: 12px;
-    line-height: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: justify;
 }
 .persons__person{
     width: 302px;
@@ -146,19 +151,27 @@ p{
 
 .person_pic{
     display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 12px;
+}
+.person_pic_1{
     background-image: url(assets/aboutus/photo1.png);
     background-repeat: no-repeat;
-    width: 302px;
-    height: 302px;
-    padding-bottom: 10px;
 }
-
-
+.person_pic_2{
+    background-image: url(assets/aboutus/photo2.png);
+    background-repeat: no-repeat;
+}
+.person_pic_3{
+    background-image: url(assets/aboutus/photo3.png);
+    background-repeat: no-repeat;
+}
 .social_media{
     padding:26px 1px;
 }
 .social_media span{
-    padding-right:  4px;
+    padding-right:  5px;
 }
 .facebook{
     display: inline-block;
