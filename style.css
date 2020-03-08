@@ -259,11 +259,6 @@ p{
     padding-top: 59px;
     margin-top: 6px;
 }
-.about-us p{ /*временно*/
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-}
 .persons{
     padding: 45px 0;
     display: flex;
@@ -349,6 +344,7 @@ p{
 .input{
     background-color: #d6564f;
     border: none;
+    color: #f0d8d9;
     width: 605px;
     height: 37px;
     margin-bottom: 16px;
@@ -356,6 +352,9 @@ p{
     padding-left: 14px;
     font-size: 11px;
     font-weight: 400;
+}
+.input:selected{
+    border: none;
 }
 .input::placeholder{
     color:#f08586;
@@ -373,12 +372,19 @@ p{
 }
 .submit{
     background-color: #d6564f;
-    color: #f08586;
+    color: #f0d8d9;
     border: none;
     width: 100px;
     height: 37px;
     border-radius: 5px;
     margin-top: 16px;
+    cursor: pointer;
+}
+.input:hover{
+    box-shadow: 0px 0px 5px 0px #2d303a;
+}
+.submit:hover{
+    box-shadow: 0px 0px 5px 0px #2d303a;
 }
 .contact{
     display: inline-block;
@@ -436,7 +442,6 @@ p{
     align-items: center;
     font-size: 12px;
 }
-
 .footer__inner .social_media{
     margin-right: -6px;
 }
