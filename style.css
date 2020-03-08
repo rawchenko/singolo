@@ -231,6 +231,9 @@ p{
 .portfolio__inner .selected a{
     color: white;
 }
+.portfolio__inner ul li a:hover{
+    color: #ccc;
+}
 /* gallery */
 
 .gallery{
@@ -292,6 +295,18 @@ p{
 }
 .social_media span{
     padding-right:  5px;
+}
+.facebook:hover{
+    opacity: 50%;
+}
+.googleplus:hover{
+    opacity: 50%;
+}
+.twitter:hover{
+    opacity: 50%;
+}
+.linkedin:hover{
+    opacity: 50%;
 }
 .facebook{
     display: inline-block;
@@ -399,10 +414,12 @@ p{
 .contact__info{
     margin-top: 20px;
 }
-.contact__info p{
+.contact__info a{
     font-size: 12px;
     line-height: 22px;
     text-align: justify;
+    text-decoration: none;
+    color: #f0d8d9;
 }
 .contact__info span{
     margin-right: 11px;
