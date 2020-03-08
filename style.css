@@ -88,6 +88,7 @@ p{
     align-items: center;
 }
 .left__button{
+    cursor: pointer;
     width: 1.7%;
     transition: .2s;
     margin-left: 2px
@@ -140,6 +141,7 @@ p{
     top:25px
 }
 .right__button{
+    cursor: pointer;
     width: 1.7%;
     transition: .2s;
 }
@@ -223,7 +225,12 @@ p{
     text-decoration: none;
     
 }
-
+.portfolio__inner .selected {
+    border-color: white;
+}
+.portfolio__inner .selected a{
+    color: white;
+}
 /* gallery */
 
 .gallery{
@@ -363,6 +370,15 @@ p{
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0px;
+}
+.submit{
+    background-color: #d6564f;
+    color: #f08586;
+    border: none;
+    width: 100px;
+    height: 37px;
+    border-radius: 5px;
+    margin-top: 16px;
 }
 .contact{
     display: inline-block;
