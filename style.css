@@ -1,17 +1,33 @@
 *{
     margin: 0;
+    padding: 0;
 }
 body{
     font-family: "Lato";
 }
-
 .container{
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
 }
+h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
 
 /* Header */
+
 .header{
     background: #2d303a;
     box-shadow:  0px 7px 0px 0px rgba(50,55,70,1);
@@ -34,7 +50,6 @@ body{
 .logo__star{
     color:#e66862;
 }
-
 .navigation ul{
     display: flex;
     height: 30px;
@@ -46,18 +61,15 @@ body{
     font-weight: 700;
     list-style-type: none;
 }
-
 .navigation ul li a{
     color: white;
     text-decoration: none;
     transition: .2s;
 }
-
 .navigation>ul :not(:first-child):before{
     content: "\00B7\00A0\00A0\00A0\00A0\00A0";
     color: #494e62;
   }
-
 .navigation ul li a:hover{
     color: #e66862;
 }
@@ -70,16 +82,15 @@ body{
     height: 594px;
     box-shadow:  0px 6px 0px 0px #ea676b;
 }
-
 .slider__inner{
     display: flex;
     height: 594px;
     align-items: center;
 }
-
 .left__button{
     width: 1.7%;
     transition: .2s;
+    margin-left: 2px
 }
 .left__button:hover{
     opacity: 70%;
@@ -89,12 +100,10 @@ body{
     width: 96.6%;
     justify-content: space-between;
 }
-
 .vertical__iphone{
     position: relative;
-    left:57px;
+    left:54px;
     display: inline-block;
-
 }
 .display{
     position: absolute;
@@ -109,7 +118,6 @@ body{
     position:absolute;
     z-index: 1;
 }
-
 .horizontal__iphone{
     position: relative;
     display: inline-block;
@@ -126,13 +134,11 @@ body{
     top: 90px;
     left: 14px;
 }
-
 .iphone__2{
     position: absolute;
     z-index: 1;
     top:25px
 }
-
 .right__button{
     width: 1.7%;
     transition: .2s;
@@ -142,7 +148,7 @@ body{
 
 }
 
-/* services */
+/* Our Services */
 
 .services{
     background: #f2f2f2;
@@ -153,13 +159,6 @@ body{
     color: #666d89;
     box-shadow: 0px 6px 0px 0px white;
 }
-
-
-.h2{
-    font-weight: 900;
-    font-size: 30px;
-}
-
 .services__inner>p{
     font-size: 18px;
     font-weight: 300;
@@ -167,7 +166,6 @@ body{
     text-align: justify;
     line-height: 30px;
 }
-
 .table{
     height: 246px;
     overflow: hidden;
@@ -177,7 +175,6 @@ body{
     position: relative;
     top: 43px;
 }
-
 .icon{
     margin-right: 21px;
     margin-top:4px
@@ -185,7 +182,6 @@ body{
 .item{
     display: flex;
     text-align: justify;
-    
 }
 .text h3{
     font-size: 18px;
@@ -198,29 +194,6 @@ body{
     line-height: 20px;
 }
 
-/* Singolo2 styles */
-
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: "Lato";
-}
-.container{
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-}
-h2{
-    font-weight: 900;
-    font-size: 30px;
-    padding-bottom: 17px;
-}
-p{
-    font-weight: 300;
-    font-size: 18px;
-}
 /* Portfolio */
 
 .portfolio{
@@ -228,18 +201,13 @@ p{
     color: #666d89;
     box-shadow:  0px 6px 0px 0px #323746;
 }
-.portfolio h2{
-    padding-bottom: 22px;
-}
 .portfolio__inner{
-    height: 759px;
+    height: 757px;
     padding: 60px 0 46px;
 }
-
 .portfolio__inner ul{
     display: flex;
-    padding: 13px 1px;
-    
+    padding: 9px 1px;
 }
 .portfolio__inner li{
     display: block;
@@ -250,7 +218,6 @@ p{
     padding: 2px 6px;
     font-size: 12px;
 }
-
 .portfolio__inner li a{
     color: #666d89;
     text-decoration: none;
@@ -262,80 +229,41 @@ p{
 .gallery{
     height: 601px;
     overflow: hidden;
-    margin-top: 7px;
+    margin-top: 11px;
 }
-
 .gallery__pic{
     display: inline-block;
-    width: 219px;
+    width: 220px;
     height: 187px;
     margin-bottom: 17px;
     overflow: hidden;
     background-position: center;
 }
 .gallery__pic:not(:nth-child(4n)){
-    margin-right: 18px;
-}
-.gallery__pic_1{
-    background-image: url(assets/Portfolio/Pic1.png)
-}
-.gallery__pic_2{
-    background-image: url(assets/Portfolio/Pic2.png)
-}
-.gallery__pic_3{
-    background-image: url(assets/Portfolio/Pic3.png)
-}
-.gallery__pic_4{
-    background-image: url(assets/Portfolio/Pic4.png)
-}
-.gallery__pic_5{
-    background-image: url(assets/Portfolio/Pic5.png)
-}
-.gallery__pic_6{
-    background-image: url(assets/Portfolio/Pic6.png)
-}
-.gallery__pic_7{
-    background-image: url(assets/Portfolio/Pic7.png)
-}
-.gallery__pic_8{
-    background-image: url(assets/Portfolio/Pic8.png)
-}
-.gallery__pic_9{
-    background-image: url(assets/Portfolio/Pic9.png)
-}
-.gallery__pic_10{
-    background-image: url(assets/Portfolio/Pic10.png)
-}
-.gallery__pic_11{
-    background-image: url(assets/Portfolio/Pic11.png)
-}
-.gallery__pic_12{
-    background-image: url(assets/Portfolio/Pic12.png)
+    margin-right: 16.8px;
 }
 
-/* about us */
+/* About us */
 
 .about-us{
     background-color: #f2f2f2;
     color: #666d89;
-    height: 669px;
+    height: 675px;
     padding-top: 59px;
     margin-top: 6px;
 }
-
 .about-us p{ /*временно*/
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
 }
-
 .persons{
     padding: 45px 0;
     display: flex;
     justify-content: space-between;
 }
 .persons h3{
-    padding-bottom: 10px;
+    padding-bottom: 3px;
     font-weight: 900;
 
     letter-spacing: -0.5px;
@@ -350,24 +278,11 @@ p{
     width: 302px;
     display: inline-block;
 }
-
 .person_pic{
     display: inline-block;
     width: 300px;
     height: 300px;
-    margin-bottom: 12px;
-}
-.person_pic_1{
-    background-image: url(assets/aboutus/photo1.png);
-    background-repeat: no-repeat;
-}
-.person_pic_2{
-    background-image: url(assets/aboutus/photo2.png);
-    background-repeat: no-repeat;
-}
-.person_pic_3{
-    background-image: url(assets/aboutus/photo3.png);
-    background-repeat: no-repeat;
+    margin-bottom: 16px;
 }
 .social_media{
     padding:26px 1px;
@@ -404,36 +319,7 @@ p{
     background-repeat: no-repeat;
 }
 
-/* Singolo3 styles */
-
-*{
-    margin: 0;
-}
-body{
-    font-family: "Lato";
-}
-.container{
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-}
-
-h2{
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 18px;
-}
-h3{
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 8px;
-}
-p{
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-}
-/* form */
+/* Get a Quote */
 
 .form{
     background-color: #f06c64;
@@ -453,8 +339,6 @@ p{
     margin: 0;
     margin-top: 43px;
 }
-
-
 .input{
     background-color: #d6564f;
     border: none;
@@ -485,7 +369,6 @@ p{
     width: 299px;
     margin-top: 39px;
     margin-left: 20px;
-
 }
 .contact>p{
     font-size: 12px;
@@ -500,7 +383,6 @@ p{
     line-height: 22px;
     text-align: justify;
 }
-
 .location{
     background-image: url(assets/icons/location.png);
     background-repeat: no-repeat;
@@ -523,7 +405,7 @@ p{
     height: 12px;
 }
 
-/* footer */
+/* Footer */
 
 .footer{
     background-color: #2d303a;
@@ -531,7 +413,6 @@ p{
     margin-top: 6px;
     color: #666d89;
 }
-
 .footer__inner{
     height: 76px;
     display: flex;
@@ -540,38 +421,6 @@ p{
     font-size: 12px;
 }
 
-
-.social_media{
-    
-}
-.social_media span{
-    padding-left: 50px ;
-}
-.facebook{
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image: url(assets/socialmedia/Facebook.png);
-    background-repeat: no-repeat;
-}
-.googleplus{
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image: url(assets/socialmedia/Google.png);
-    background-repeat: no-repeat;
-}
-.twitter{
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image: url(assets/socialmedia/Twitter.png);
-    background-repeat: no-repeat;
-}
-.linkedin{
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image:url(assets/socialmedia/LinkedIn.png) ;
-    background-repeat: no-repeat;
+.footer__inner .social_media{
+    margin-right: -6px;
 }
