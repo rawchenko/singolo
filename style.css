@@ -240,25 +240,24 @@ p{
     height: 601px;
     overflow: hidden;
     margin-top: 11px;
-}
-.gallery__pic{
-    display: inline-block;
-    width: 220px;
-    height: 187px;
-    margin-bottom: 17px;
-    overflow: hidden;
-    background-position: center;
-}
-.gallery__pic:not(:nth-child(4n)){
-    margin-right: 16.8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
+.gallery div{
+    overflow: hidden;
+}
+.gallery div:nth-child(1n + 13){
+    display: none;
+}
 /* About us */
 
 .about-us{
     background-color: #f2f2f2;
+    box-shadow:  0px 6px 0px 0px white;
     color: #666d89;
-    height: 675px;
+    height: 669px;
     padding-top: 59px;
     margin-top: 6px;
     text-align: justify;
@@ -342,6 +341,7 @@ p{
 .form{
     background-color: #f06c64;
     color: #f0d8d9;
+    margin-top: 6px;
     padding: 60px 0;
     height: 528px;
     box-shadow: 0 6px 0 0 #ea676b;
