@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Singolo</title>
 </head>
 <body>
@@ -14,18 +15,18 @@
                 <h1 class="logo"><a href="#">Singolo<span class="logo__star">*</span></a></h1>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a class = "active" href="#slider">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#about-us">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#form">Contact</a></li>
                     </ul>
                 </nav>
             </div>
     </header>
 
     <!-- Slider -->
-    <section class="slider">
+    <section class="slider" id="slider">
             <div class="container slider__inner">
                 <div class="left__button">
                     <img src="assets/chev-left.png" alt="chev-left">
@@ -189,7 +190,7 @@
         </div>
     </section>
     <!-- Get a Quote -->
-    <section class="form">
+    <section class="form" id="form">
             <div class="container form__inner">
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>

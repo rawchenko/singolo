@@ -4,6 +4,10 @@
 }
 body{
     font-family: "Lato";
+    
+}
+body, html{
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -32,6 +36,11 @@ p{
     background: #2d303a;
     box-shadow:  0px 7px 0px 0px rgba(50,55,70,1);
     text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    opacity: 100%;
+    z-index: 10;
+    margin-top: -6px;
 }
 .header__inner{
     height: 89px;
@@ -74,11 +83,15 @@ p{
     color: #e66862;
 }
 
+.navigation .active {
+    color: #e66862;
+}
+
 /* Slider */
 
 .slider{
     background: #f06c64;
-    margin-top:6px;
+    padding-top: 90px;
     height: 594px;
     box-shadow:  0px 6px 0px 0px #ea676b;
 }
