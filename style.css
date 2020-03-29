@@ -90,31 +90,53 @@ p{
 /* Slider */
 
 .slider{
-    background: #f06c64;
+    position: relative;
+    background: #F06C64;
     padding-top: 90px;
     height: 594px;
     box-shadow:  0px 6px 0px 0px #ea676b;
 }
 .slider__inner{
-    display: flex;
+    /* display: flex; */
     height: 594px;
-    align-items: center;
+    position: relative;
 }
-.left__button{
+
+.content {
+    position: relative;
+    overflow: hidden;
+    width: 940px;
+    height: 594px;
+}
+
+.content img {
+    left: -40px;
+    position: absolute;
+}
+
+.slide-single {
+    transition: 1s;
+}
+.left__button, .right__button{
+    position: absolute;
+    z-index: 1;
     cursor: pointer;
     width: 1.7%;
     transition: .2s;
-    margin-left: 2px
+    top: 270px;
 }
-.left__button:hover{
-    opacity: 70%;
 
+.right__button {
+    right: 0;
 }
-.content{
-    width: 96.6%;
-    justify-content: space-between;
+.left__button:hover, .right__button:hover{
+    opacity: 70%;
 }
-.vertical__iphone{
+
+
+
+
+/* .vertical__iphone{
     position: relative;
     left:55px;
     display: inline-block;
@@ -152,16 +174,8 @@ p{
     position: absolute;
     z-index: 1;
     top:25px
-}
-.right__button{
-    cursor: pointer;
-    width: 1.7%;
-    transition: .2s;
-}
-.right__button:hover{
-    opacity: 70%;
+} */
 
-}
 
 /* Our Services */
 
@@ -303,7 +317,7 @@ p{
     margin-bottom: 16px;
 }
 .social_media{
-    padding:26px 1px;
+    padding:20px 1px;
 }
 .social_media span{
     padding-right:  5px;
@@ -476,4 +490,159 @@ p{
 }
 .footer__inner .social_media{
     margin-right: -6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1019px){
+    .container {
+        max-width: 688px;
+    }
+
+    .slider {
+        height: 450px;
+    }
+
+    .content img {
+        height: 450px;
+        left: -40px;
+    }
+
+    .left__button, .right__button {
+        top: 210px;
+    }
+
+    .table {
+        height: 418px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services{
+        
+        height: 700px;
+    }
+
+    .gallery{
+        height: 794px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio__inner{
+        height: 1043px;
+        padding-top: 59px;
+        padding-bottom: 0;
+        
+    }
+
+    .persons__person {
+        width: 219px;
+    }
+
+    .person_pic {
+        height: 219px;
+    }
+
+    .person_pic img {
+        width: 219px
+    }
+
+    .form {
+        height: 568px;
+    }
+    .input {
+        width: 442px;
+    }
+
+    .contact {
+        width: 213px;
+    }
+
+    .textarea {
+        width: 428px;
+    }
+}
+
+@media screen and ( min-width: 375px ) and (max-width: 767px) {
+    .container {
+        max-width: 315px;
+    }
+
+    .slider {
+        height: 220px;
+    }
+
+    .content img {
+        height: 220px;
+        left: -40px;
+    }
+
+    .left__button, .right__button {
+        top: 100px;
+    }
+
+    .table {
+        height: 699px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px
+    }
+
+    .services{
+        
+        height: 1050px;
+    }
+
+    .gallery{
+        height: 794px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 13px;
+    }
+
+    .portfolio__inner{
+        height: 1043px;
+        padding-top: 59px;
+        padding-bottom: 0;
+        
+    }
+
+    .about-us {
+        height: 1750px;
+    }
+    .persons {
+        flex-direction: column;
+    }
+    .persons__person {
+        width: 315px;
+    }
+
+    .person_pic {
+        height: 315px;
+    }
+
+    .person_pic img {
+        width: 315px
+    }
+
+    .form {
+        height: 969px;
+        padding-bottom: 0;
+    }
+    .input {
+        width: 309px;
+    }
+    .submit{
+        width: 323px;
+    }
+    .contact {
+        margin: 30px 0;
+    }
+
+    .textarea {
+        width: 295px;
+    }
+
+    .footer__inner div:first-child {
+        display: none;
+    }
+
+    .footer__inner div:last-child {
+        margin: 0 auto;
+    }
 }
