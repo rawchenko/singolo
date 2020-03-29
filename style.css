@@ -4,7 +4,7 @@
 }
 body{
     font-family: "Lato";
-    
+    overflow-x: hidden;
 }
 body, html{
     scroll-behavior: smooth;
@@ -31,6 +31,10 @@ p{
 }
 
 /* Header */
+
+.menu {
+    display: none;
+}
 
 .header{
     background: #2d303a;
@@ -492,7 +496,7 @@ p{
     margin-right: -6px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1019px){
+@media screen and (min-width: 768px) and (max-width: 1020px){
     .container {
         max-width: 688px;
     }
@@ -560,7 +564,7 @@ p{
     }
 }
 
-@media screen and ( min-width: 375px ) and (max-width: 767px) {
+@media screen  and ( min-width: 375px ) and (max-width: 767px) {
     .container {
         max-width: 315px;
     }
@@ -636,6 +640,133 @@ p{
 
     .textarea {
         width: 295px;
+    }
+
+    .footer__inner div:first-child {
+        display: none;
+    }
+
+    .footer__inner div:last-child {
+        margin: 0 auto;
+    }
+}
+
+@media screen  and (max-width: 374px) {
+    .container {
+        max-width: 315px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top:37px;
+        left: 15px;
+    }
+
+    .menu:checked + .navigation{
+        display: block;
+    }
+    .navigation {
+        display: none;
+        position: fixed;
+        background-color: green;
+        width: 300px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .navigation ul {
+        position: fixed;
+        display: block;
+        font-size: 30px;
+        margin: calc(100vh / 4) 60px;
+    }
+    
+
+    .navigation ul li {
+        list-style: none;
+        margin: 28px 0;
+    }
+    .navigation>ul :not(:first-child):before{
+        display: none;
+      }
+
+    .slider {
+        height: 220px;
+    }
+
+    .content img {
+        height: 220px;
+        left: -40px;
+    }
+
+    .left__button, .right__button {
+        top: 100px;
+    }
+
+    .table {
+        height: 699px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px
+    }
+
+    .services{
+        
+        height: 1050px;
+    }
+
+    .gallery{
+        height: 794px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 13px;
+    }
+
+    .portfolio__inner{
+        height: 1043px;
+        padding-top: 59px;
+        padding-bottom: 0;
+        
+    }
+
+    .about-us {
+        height: 1720px;
+    }
+    .persons {
+        flex-direction: column;
+    }
+    .persons__person {
+        width: 315px;
+    }
+
+    .person_pic {
+        height: 315px;
+    }
+
+    .person_pic img {
+        width: 315px
+    }
+
+    .form {
+        height: 969px;
+        padding-bottom: 0;
+    }
+    .input {
+        width: 300px;
+    }
+    .submit{
+        width: 313px;
+    }
+    .contact {
+        margin: 30px 0;
+    }
+
+    .textarea {
+        width: 286px;
     }
 
     .footer__inner div:first-child {
